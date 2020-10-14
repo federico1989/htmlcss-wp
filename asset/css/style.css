@@ -30,8 +30,9 @@ p {
 .mb_20 {
   margin-bottom: 20px;
 }
-/* utility */
+/* /utility */
 
+ /* header */
 header {
   height: 400px;
   background: red;
@@ -103,6 +104,7 @@ nav {
   text-decoration: underline;
 }
 /* /sezione nav */
+ /* /header */
 
 /* sezione main */
 main::after {
@@ -115,6 +117,13 @@ main::after {
   width: 20%;
 }
 
+.rounded_box {
+  border-radius: 10px;
+  background: white;
+  padding: 5px;
+}
+
+ /* colonna sinistra */
 .col_header::after {
   content: "";
   display: table;
@@ -137,13 +146,6 @@ main::after {
   text-transform: capitalize;
 }
 
-
-.rounded_box {
-  border-radius: 10px;
-  background: white;
-  padding: 5px;
-}
-
 .col_header ul {
   list-style: none;
   text-decoration: none;
@@ -156,6 +158,7 @@ main::after {
   padding: 0, 10px;
   line-height: 30px;
 }
+
 .themes li a {
   display: inline-block;
   text-decoration: none;
@@ -164,7 +167,6 @@ main::after {
   padding: 2px;
 }
 
-}
 .themes li:hover {
   background: lightgrey;
   cursor: pointer;
@@ -173,7 +175,8 @@ main::after {
 .themes li a ;hover {
   text-decoration: underline;
 }
-
+ /* /colonna sinistra */
+  /* colonna centrale */
 .col_center {
   width: 50%;
   margin: 0 5%;
@@ -183,7 +186,8 @@ main::after {
   text-shadow: 4px 4px #ededed;
   margin-bottom: 20px;
 }
-
+ /* /colonna centrale */
+  /* colonna destra */
 .widget {
   padding: 20px;
   margin-bottom: 20px;
@@ -192,9 +196,9 @@ main::after {
 .col_right h2 {
   margin-bottom: 20px;
 }
-
-
+/* /colonna destra */
 /* /sezione main */
+
 /* sezione footer */
 footer {
   height: 200px;
@@ -202,3 +206,49 @@ footer {
   background: white;
   border: 1px solid black;
 }
+
+footer::after {
+  content: "";
+  display: table;
+  clear:both;
+}
+
+.social {
+  width: 33%;
+  color: lightgrey;
+  font-size: 50px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+footer h2 {
+  margin-top: 5px;
+  font-size: 20px;
+  font-style: italic;
+  color: lightgrey;
+  text-align: center;
+}
+
+hr {
+  font-size: 40px;
+  border: 1px solid lightgrey;
+}
+
+.facebook, .instagram, .github {
+  color: lightgrey;
+  cursor: pointer;
+}
+
+.social .facebook:hover{
+  color: blue;
+}
+
+.social .instagram:hover {
+  color: #d6249f;
+  color: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+}
+
+.social .github:hover {
+  color: #0d2636
+}
+/* /sezione footer */

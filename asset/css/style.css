@@ -9,6 +9,10 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+p {
+  line-height: 2em;
+}
+
 #container {
   width: 1000px;
   margin: auto;
@@ -109,13 +113,16 @@ main::after {
 
 .col_left, .col_right {
   width: 20%;
-  border: 1px solid black;
 }
 
 .col_header::after {
   content: "";
   display: table;
   clear:both;
+}
+
+.col_left ul {
+  list-style: none;
 }
 
 .col_left i {
@@ -127,7 +134,9 @@ main::after {
 .col_left h2 {
   width: 60%;
   font-weight: 600;
+  text-transform: capitalize;
 }
+
 
 .rounded_box {
   border-radius: 10px;
@@ -135,18 +144,12 @@ main::after {
   padding: 5px;
 }
 
-
-.col_center {
-  width: 50%;
-  margin: 0 5%;
-  border: 1px solid black;
-}
-
 .col_header ul {
   list-style: none;
   text-decoration: none;
   font-size: 15px;
   padding: 5px;
+  text-transform: capitalize;
 }
 
 .themes li {
@@ -158,7 +161,7 @@ main::after {
   text-decoration: none;
   color: green;
   font-size: 15px;
-  padding: 5px;
+  padding: 2px;
 }
 
 }
@@ -170,8 +173,29 @@ main::after {
 .themes li a ;hover {
   text-decoration: underline;
 }
-/* sezione main */
 
+.col_center {
+  width: 50%;
+  margin: 0 5%;
+}
+
+.col_center h2 {
+  text-shadow: 4px 4px #ededed;
+  margin-bottom: 20px;
+}
+
+.widget {
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.col_right h2 {
+  margin-bottom: 20px;
+}
+
+
+/* /sezione main */
+/* sezione footer */
 footer {
   height: 200px;
   margin-top: 20px;
